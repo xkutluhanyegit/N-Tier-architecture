@@ -1,0 +1,86 @@
+App/
+├── src/
+│   ├── Domain/          → Temel entity ve iş kuralları (Business Rules)
+│   ├── Application/     → Business logic, servisler ve CQRS
+│   ├── Infrastructure/  → Veri erişimi, harici servisler, kimlik doğrulama
+│   ├── Presentation/    → API ve kullanıcıyla etkileşim katmanı
+│   ├── Shared/          → Ortak kullanılan yardımcılar, loglama, uzantılar
+│   └── CrossCutting/    → Tüm katmanlarda kullanılan kesişen işlemler
+└── tests/               → Unit ve Integration testler
+
+Domain/
+├── Entities/           → Ana domain nesneleri (Order, Product, Customer vb.)
+├── ValueObjects/       → Değer nesneleri (Money, Address vb.)
+├── Enums/              → Enumlar
+├── Exceptions/         → Özel exception'lar
+├── Interfaces/         → Interface'ler (Repository, Services)
+│   ├── Repositories/   → Generic ve özel repository interface'leri
+│   ├── Services/       → Domain servis interface'leri
+│   └── Events/         → Event handler interface'leri
+├── Events/             → Domain event'leri
+├── Specifications/     → Specification Pattern implementasyonu
+├── Aggregates/         → Aggregate root'lar
+├── Constants/          → Sabit değerler ve hata mesajları
+└── Helpers/            → Küçük yardımcı metotlar (Extension Methods vb.)
+
+
+Application/
+├── DTOs/                → Request/Response modelleri
+│   ├── Requests/        → Input modeller
+│   └── Responses/       → Output modeller
+│
+├── Interfaces/          → Servis kontratları
+├── Services/            → Business servis implementasyonları
+├── Features/            → CQRS Pattern için (Opsiyonel)
+│   └── {EntityName}/
+│       ├── Commands/
+│       ├── Queries/
+│       └── EventHandlers/
+│
+├── Mappings/            → AutoMapper profilleri
+├── Validations/         → FluentValidation kuralları
+├── Jobs/                → Zamanlanmış görevler (Hangfire, Quartz.NET)
+├── Common/              → Yardımcı sınıflar
+└── Events/Handlers/     → Domain event handler'ları
+
+Infrastructure/
+├── Persistence/           → Veritabanı işlemleri
+│   ├── Context/          → EF Core DbContext ve konfigürasyonlar
+│   ├── Migrations/       → Database migration dosyaları
+│   ├── Repositories/     → Repository implementasyonları
+│   └── SeedData/         → Başlangıç verileri
+├── Identity/             → Kullanıcı kimlik doğrulama (JWT, Identity Server)
+├── Logging/              → Log mekanizması (Serilog, NLog)
+├── Email/                → SMTP, SendGrid vb. servisler
+├── Caching/              → Redis, Memory Cache işlemleri
+├── FileStorage/          → Dosya yönetimi (AWS S3, Azure Blob)
+└── MessageBus/           → RabbitMQ, Kafka entegrasyonları
+
+Presentation/
+└── API/
+    ├── Controllers/     → API endpoint'leri
+    ├── Middleware/      → Özel middleware'ler
+    ├── Filters/         → Action filters
+    ├── Extensions/      → ServiceCollection ve diğer extension'lar
+    ├── Configuration/   → AppSettings ve diğer konfigürasyonlar
+    ├── Versioning/      → API versionlama yönetimi
+    └── Docs/Swagger/    → API dökümantasyonu (Swagger)
+
+Shared/
+├── Helpers/             → Genel yardımcı metodlar
+├── Logging/             → Serilog veya diğer loglama
+├── Extensions/          → Global extension metodlar
+├── FeatureFlags/        → Yeni özellik bayrakları (Feature Management)
+└── Localization/        → Çoklu dil desteği (JSON, XML)
+
+CrossCutting/
+├── ExceptionHandling/   → Merkezi hata yönetimi
+├── Security/            → Yetkilendirme ve güvenlik politikaları
+├── EventHandlers/       → Event-driven architecture desteği
+├── Performance/         → Performans iyileştirmeleri (Rate Limiting vb.)
+└── Audit/               → Loglama ve izlenebilirlik
+
+tests/
+├── UnitTests/           → Birim testler (xUnit, NUnit, MSTest)
+├── IntegrationTests/    → Entegrasyon testleri
+└── PerformanceTests/    → Yük ve stres testleri
