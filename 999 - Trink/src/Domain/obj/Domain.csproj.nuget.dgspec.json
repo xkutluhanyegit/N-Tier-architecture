@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\src\\Domain\\Domain.csproj": {}
+    "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\999 - Trink\\src\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\src\\Domain\\Domain.csproj": {
+    "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\999 - Trink\\src\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\src\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\999 - Trink\\src\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\src\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\999 - Trink\\src\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\src\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\999 - Trink\\src\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kutluhan.yegit\\AppData\\Roaming\\NuGet\\NuGet.Config"

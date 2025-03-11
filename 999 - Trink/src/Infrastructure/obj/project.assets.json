@@ -4028,11 +4028,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\src\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\999 - Trink\\src\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\src\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\999 - Trink\\src\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\src\\Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\999 - Trink\\src\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kutluhan.yegit\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -4047,8 +4047,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\src\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\src\\Domain\\Domain.csproj"
+            "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\999 - Trink\\src\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\kutluhan.yegit\\Desktop\\N-Tier architecture\\999 - Trink\\src\\Domain\\Domain.csproj"
             }
           }
         }

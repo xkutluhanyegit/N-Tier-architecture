@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/src/Presentation/Presentation.csproj",
+                "${workspaceFolder}/999 - Trink/src/Presentation/Presentation.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/src/Presentation/Presentation.csproj",
+                "${workspaceFolder}/999 - Trink/src/Presentation/Presentation.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/src/Presentation/Presentation.csproj"
+                "${workspaceFolder}/999 - Trink/src/Presentation/Presentation.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
