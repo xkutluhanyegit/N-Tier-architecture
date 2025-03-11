@@ -304,3 +304,12 @@ C:\Users\kutluhan.yegit\Desktop\N-Tier architecture\999 - Trink\src\Presentation
 C:\Users\kutluhan.yegit\Desktop\N-Tier architecture\999 - Trink\src\Presentation\obj\Debug\net8.0\Presentation.pdb
 C:\Users\kutluhan.yegit\Desktop\N-Tier architecture\999 - Trink\src\Presentation\obj\Debug\net8.0\Presentation.genruntimeconfig.cache
 C:\Users\kutluhan.yegit\Desktop\N-Tier architecture\999 - Trink\src\Presentation\obj\Debug\net8.0\ref\Presentation.dll
+C:\Users\kutluhan.yegit\Desktop\N-Tier architecture\999 - Trink\src\Presentation\bin\Debug\net8.0\AspectCore.Abstractions.dll
+C:\Users\kutluhan.yegit\Desktop\N-Tier architecture\999 - Trink\src\Presentation\bin\Debug\net8.0\AspectCore.Core.dll
+C:\Users\kutluhan.yegit\Desktop\N-Tier architecture\999 - Trink\src\Presentation\bin\Debug\net8.0\AspectCore.Extensions.DependencyInjection.dll
+C:\Users\kutluhan.yegit\Desktop\N-Tier architecture\999 - Trink\src\Presentation\bin\Debug\net8.0\AspectCore.Extensions.Reflection.dll
+C:\Users\kutluhan.yegit\Desktop\N-Tier architecture\999 - Trink\src\Presentation\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\kutluhan.yegit\Desktop\N-Tier architecture\999 - Trink\src\Presentation\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\kutluhan.yegit\Desktop\N-Tier architecture\999 - Trink\src\Presentation\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\kutluhan.yegit\Desktop\N-Tier architecture\999 - Trink\src\Presentation\bin\Debug\net8.0\CrossCutting.dll
+C:\Users\kutluhan.yegit\Desktop\N-Tier architecture\999 - Trink\src\Presentation\bin\Debug\net8.0\CrossCutting.pdb

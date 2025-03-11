@@ -9,8 +9,11 @@
       "Presentation/1.0.0": {
         "dependencies": {
           "Applications": "1.0.0",
+          "AspectCore.Core": "2.4.0",
+          "AspectCore.Extensions.DependencyInjection": "2.4.0",
           "AutoMapper": "14.0.0",
           "Domain": "1.0.0",
+          "FluentValidation": "11.11.0",
           "Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.13",
           "Microsoft.AspNetCore.OpenApi": "8.0.13",
@@ -22,6 +25,46 @@
         },
         "runtime": {
           "Presentation.dll": {}
+        }
+      },
+      "AspectCore.Abstractions/2.4.0": {
+        "runtime": {
+          "lib/net7.0/AspectCore.Abstractions.dll": {
+            "assemblyVersion": "2.4.0.0",
+            "fileVersion": "2.4.0.0"
+          }
+        }
+      },
+      "AspectCore.Core/2.4.0": {
+        "dependencies": {
+          "AspectCore.Abstractions": "2.4.0",
+          "AspectCore.Extensions.Reflection": "2.4.0"
+        },
+        "runtime": {
+          "lib/net7.0/AspectCore.Core.dll": {
+            "assemblyVersion": "2.4.0.0",
+            "fileVersion": "2.4.0.0"
+          }
+        }
+      },
+      "AspectCore.Extensions.DependencyInjection/2.4.0": {
+        "dependencies": {
+          "AspectCore.Core": "2.4.0",
+          "Microsoft.Extensions.DependencyInjection": "8.0.1"
+        },
+        "runtime": {
+          "lib/net7.0/AspectCore.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "2.4.0.0",
+            "fileVersion": "2.4.0.0"
+          }
+        }
+      },
+      "AspectCore.Extensions.Reflection/2.4.0": {
+        "runtime": {
+          "lib/net7.0/AspectCore.Extensions.Reflection.dll": {
+            "assemblyVersion": "2.4.0.0",
+            "fileVersion": "2.4.0.0"
+          }
         }
       },
       "AutoMapper/14.0.0": {
@@ -67,6 +110,38 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.11.4.0",
             "fileVersion": "1.1100.424.31005"
+          }
+        }
+      },
+      "FluentValidation/11.11.0": {
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.11.0.0"
+          }
+        }
+      },
+      "FluentValidation.AspNetCore/11.3.0": {
+        "dependencies": {
+          "FluentValidation": "11.11.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.5.1"
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.3.0.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.5.1": {
+        "dependencies": {
+          "FluentValidation": "11.11.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.5.1.0"
           }
         }
       },
@@ -968,11 +1043,26 @@
       "Applications/1.0.0": {
         "dependencies": {
           "AutoMapper": "14.0.0",
+          "CrossCutting": "1.0.0",
           "Domain": "1.0.0",
+          "FluentValidation": "11.11.0",
+          "FluentValidation.AspNetCore": "11.3.0",
           "Infrastructure": "1.0.0"
         },
         "runtime": {
           "Applications.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CrossCutting/1.0.0": {
+        "dependencies": {
+          "AspectCore.Core": "2.4.0",
+          "FluentValidation": "11.11.0"
+        },
+        "runtime": {
+          "CrossCutting.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1007,6 +1097,34 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AspectCore.Abstractions/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ilFXjOqJuPuoLn3lIYMyvZ4N1e2rm4umtCQZvgjXhyeyZrT6F+/mSBAIIv5t2qKxjIoXrwr+h/AZk0/YnS4+tQ==",
+      "path": "aspectcore.abstractions/2.4.0",
+      "hashPath": "aspectcore.abstractions.2.4.0.nupkg.sha512"
+    },
+    "AspectCore.Core/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P4SXwUUfE6bA80D2DOX27TyfYuB4mMcZ+95ge1OlTV7Nr1puD1JrdGSkYVNFP8iBvrMsIr/vrJ32NvN7nWwtbQ==",
+      "path": "aspectcore.core/2.4.0",
+      "hashPath": "aspectcore.core.2.4.0.nupkg.sha512"
+    },
+    "AspectCore.Extensions.DependencyInjection/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ddeL+5YwAYxAj+gmsKbYp1XlVxuwEtiAbPaFF8Ou78tYVEuv+tI3ebaKygrMYjRi5myMPUgoSBzZTLxJ0WqaEg==",
+      "path": "aspectcore.extensions.dependencyinjection/2.4.0",
+      "hashPath": "aspectcore.extensions.dependencyinjection.2.4.0.nupkg.sha512"
+    },
+    "AspectCore.Extensions.Reflection/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZQQ0vwV3OvhI8fipppLK+8PwwgeHSnXW1S/f0e6KGdzTHBJefrnMxdgF8xw08OC76BOK5/xeGJ4FKGJfK30H+g==",
+      "path": "aspectcore.extensions.reflection/2.4.0",
+      "hashPath": "aspectcore.extensions.reflection.2.4.0.nupkg.sha512"
+    },
     "AutoMapper/14.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1027,6 +1145,27 @@
       "sha512": "sha512-Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg==",
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
+    },
+    "FluentValidation/11.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cyIVdQBwSipxWG8MA3Rqox7iNbUNUTK5bfJi9tIdm4CAfH71Oo5ABLP4/QyrUwuakqpUEPGtE43BDddvEehuYw==",
+      "path": "fluentvalidation/11.11.0",
+      "hashPath": "fluentvalidation.11.11.0.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/11.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jtFVgKnDFySyBlPS8bZbTKEEwJZnn11rXXJ2SQnjDhZ56rQqybBg9Joq4crRLz3y0QR8WoOq4iE4piV81w/Djg==",
+      "path": "fluentvalidation.aspnetcore/11.3.0",
+      "hashPath": "fluentvalidation.aspnetcore.11.3.0.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iWM0LS1MDYX06pcjMEQKqHirl2zkjHlNV23mEJSoR1IZI7KQmTa0RcTtGEJpj5+iHvBCfrzP2mYKM4FtRKVb+A==",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.5.1",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1568,6 +1707,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "Applications/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrossCutting/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
