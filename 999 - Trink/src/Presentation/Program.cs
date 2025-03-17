@@ -17,7 +17,9 @@ using Applications.Mappings.UserProfile;
 using Applications.Mappings.UserRoleProfile;
 using Applications.Mappings.RoleProfile;
 using AspectCore.Extensions.DependencyInjection;
-using Applications.DependencyInjection.AspectCore;
+using FluentValidation;
+using AspectCore.Extensions.DependencyInjection;
+using Applications.DTOs.Request.Auth;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -75,13 +77,10 @@ builder.Services.AddAuthentication(options =>
 
 
 
-builder.Host.UseServiceProviderFactory(new DynamicProxyServiceProviderFactory());
-builder.Services.AddAspectCoreServices();
-
-
-
 builder.Services.AddDbContext<TrinkappContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Trinkapp")));
+
+
 
 
 builder.Services.AddControllers();

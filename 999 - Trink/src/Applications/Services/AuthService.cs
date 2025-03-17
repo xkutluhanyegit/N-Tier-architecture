@@ -1,12 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 using Applications.DTOs.Request.Auth;
 using Applications.DTOs.Request.UserRole;
 using Applications.DTOs.Response.Auth;
 using Applications.Interfaces;
-using Applications.Validations.FluentValidation;
+using Applications.Mappings.UserProfile;
 using AutoMapper;
 using CrossCutting.Validation;
 using Domain.Entities;
@@ -41,7 +38,6 @@ namespace Applications.Services
             _userRoleService = userRoleService;
         }
 
-        [ValidationAspect(typeof(UserValidator))]
         public async Task<AuthResponse> LoginAsync(LoginRequest request)
         {
             var user = await _userService.GetUserByEmailAsyınc(request.Email);
